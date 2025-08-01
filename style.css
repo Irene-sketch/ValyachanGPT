@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-image: url('background.png'); /* Change the filename if needed */
+  background-image: url('"C:\Users\irene\Downloads\ChatGPT Image Aug 1, 2025, 08_13_18 PM.png"'); /* Change the filename if needed */
   background-size: cover;
   background-position: center bottom; /* shifted to show more of the bottom (like the face) */
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 250, 240, 0.85); /* semi-transparent for readability */
+  background-color: rgba(255, 250, 240, 0.85);
   border: 3px dashed #8b4513;
   border-radius: 20px;
   padding: 2rem;

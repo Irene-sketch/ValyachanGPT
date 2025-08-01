@@ -13,14 +13,18 @@ const pazhamchollukal = [
 
 function getProverb() {
   const input = document.getElementById("userInput").value.trim();
+  const responseBox = document.getElementById("responseBox");
+  const responseText = document.getElementById("responseText");
 
   if (input === "") {
-    document.getElementById("response").innerText = "ചോദ്യമൊന്നുമില്ലേ മക്കളേ?";
+    responseText.innerText = "ചോദ്യമൊന്നുമില്ലേ മക്കളേ?";
+    responseBox.classList.remove("hidden");
     return;
   }
 
   const randomIndex = Math.floor(Math.random() * pazhamchollukal.length);
   const response = pazhamchollukal[randomIndex];
 
-  document.getElementById("response").innerText = "👉 " + response;
+  responseText.innerText = "👉 " + response;
+  responseBox.classList.remove("hidden");
 }
