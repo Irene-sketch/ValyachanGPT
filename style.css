@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
+<<<<<<< HEAD
   background-image: url("bg.jpg"); /* Replace with your image filename */
+=======
+  background-image: url('background.png'); /* Change the filename if needed */
+>>>>>>> b89d152ac4d8cf74c40c344fac9d85b92c5b680b
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +18,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 250, 240, 0.85);
+  background-color: rgba(255, 250, 240, 0.85); /* semi-transparent for readability */
   border: 3px dashed #8b4513;
   border-radius: 20px;
   padding: 2rem;
