@@ -2,15 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-<<<<<<< HEAD
-  background-image: url("bg.jpg"); /* Replace with your image filename */
-=======
-  background-image: url('background.png'); /* Change the filename if needed */
->>>>>>> b89d152ac4d8cf74c40c344fac9d85b92c5b680b
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  color: #5c4033;
+  background-color: #fffaf0; /* Light fallback color */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +11,14 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 250, 240, 0.85); /* semi-transparent for readability */
+  background-color: rgba(255, 250, 240, 0.95);
   border: 3px dashed #8b4513;
   border-radius: 20px;
   padding: 2rem;
   width: 90%;
   max-width: 500px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(139, 69, 19, 0.6);
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.3);
   animation: fadeIn 1.5s ease-in-out;
 }
 
