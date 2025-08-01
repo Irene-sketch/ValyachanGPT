@@ -1,0 +1,35 @@
+/* Import a traditional-looking font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(to bottom right, #2c1a14, #5a3928);
+  color: #f8f0e3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 248, 220, 0.1);
+  border: 2px solid #e0c097;
+  padding: 30px 40px;
+  border-radius: 15px;
+  max-width: 5010px; //
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bo
