@@ -1,41 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(120deg, #fff3e0, #ffe0b2);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #fff8e1, #ffe4b5);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('images/valyachan-bg.jpg'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .container {
-  background: rgba(255, 250, 240, 0.85); /* Glass effect */
-  border: 3px solid #a0522d;
+  background-color: #fffaf0;
+  border: 3px dashed #8b4513;
   border-radius: 20px;
   padding: 2rem;
   width: 90%;
-  max-width: 480px;
+  max-width: 500px;
   text-align: center;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.4);
   animation: fadeIn 1.5s ease-in-out;
 }
 
 h1 {
-  color: #5d2800;
-  margin-bottom: 0.5rem;
+  color: #a0522d;
   animation: swing 2s infinite ease-in-out;
 }
 
 .tagline {
-  font-style: italic;
-  color: #4e342e;
   margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #5c4033;
 }
 
 .input-section {
@@ -45,23 +39,22 @@ h1 {
 }
 
 input[type="text"] {
-  padding: 12px;
+  padding: 10px;
   font-size: 1rem;
-  border: 2px solid #bc8f8f;
+  border: 2px solid #deb887;
   border-radius: 8px;
+  outline: none;
   width: 100%;
-  transition: all 0.3s ease;
-  background: #fffaf0;
+  transition: 0.3s ease;
 }
 
 input[type="text"]:focus {
   border-color: #8b4513;
-  background: #fffbe6;
 }
 
 button {
-  padding: 12px;
-  background-color: #a0522d;
+  padding: 10px;
+  background-color: #cd853f;
   color: white;
   border: none;
   border-radius: 8px;
@@ -71,23 +64,42 @@ button {
 }
 
 button:hover {
-  background-color: #6e3f19;
+  background-color: #a0522d;
 }
 
 #responseBox {
-  margin-top: 1.5rem;
-  font-size: 1.05rem;
-  background: #fef3e7;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  background: #fff3e0;
   padding: 1rem;
-  border-left: 5px solid #a0522d;
-  border-radius: 8px;
-  min-height: 60px;
+  border-radius: 10px;
   animation: fadeIn 1s ease-in-out;
-  color: #5c4033;
 }
 
 #responseBox.hidden {
   display: none;
 }
 
-.
+.valyachan {
+  font-size: 4rem;
+  margin-top: 1.5rem;
+  animation: bobble 3s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bobble {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
